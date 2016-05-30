@@ -4,10 +4,18 @@ import requests
 def callIndexAPI(JSONdata):
 
     headers = {'content-type': 'application/json'}
-    url = 'http://54.x.x.x:8080/solr/cdcr/update/json/docs'
+    url = 'http://54.x.x.x:8080/solr/cdcr/update'
     data = JSONdata
 
     requests.post(url, json=data, headers=headers)
+
+
+def callCommitAPI():
+
+    headers = {'content-type': 'application/json'}
+    url = 'http://54.x.x.x:8080/solr/cdcr/update?commit=true'
+
+    requests.post(url, headers=headers)
 
 
 def buildJSONData(docID):
@@ -29,12 +37,16 @@ def main():
     offset = 1
     json_data = []
 
-    for x in range(offset, indexNo):
+    for x in range(offset, indexNo + 1):
         json_data.append(buildJSONData(x))
 
     for item in json_data:
         print(item)
-#    callIndexAPI(json_data)
+
+    # callIndexAPI(json_data)
+
+    # Commit the changes to reflect in the collection
+    # callCommitAPI()
 
 # Start the indexing
 main()
