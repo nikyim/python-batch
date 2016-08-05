@@ -1,0 +1,1 @@
+echo $(date) "| start-cluster | " $(curl -X POST -H "Content-Type: application/json" -u username:password https://seekasia.cloud.databricks.com/api/1.2/clusters/create -d "@default-cluster-start.json") >> /path/to/your/log/cluster-status.log

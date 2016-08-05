@@ -84,4 +84,6 @@ def main():
 
 
 # Start the indexing
-main()
+if __name__ == "__main__":
+    main()
+

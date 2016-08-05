@@ -1,0 +1,7 @@
+Fri Aug 5 09:38:23 UTC 2016 [{"id":"0805-090117-owned7","name":"default-cluster","status":"Running","driverIp":"10.152.226.153","jdbcPort":10000,"numWorkers":1},{"id":"0805-081403-ban5","name":"default-cluster-1","status":"Terminated","driverIp":"10.152.234.57","jdbcPort":10000,"numWorkers":1},{"id":"0805-081418-build6","name":"default-cluster-2","status":"Terminated","driverIp":"10.152.212.17","jdbcPort":10000,"numWorkers":1}]
+Fri Aug 5 09:38:58 UTC 2016 [{"id":"0805-090117-owned7","name":"default-cluster","status":"Running","driverIp":"10.152.226.153","jdbcPort":10000,"numWorkers":1},{"id":"0805-081403-ban5","name":"default-cluster-1","status":"Terminated","driverIp":"10.152.234.57","jdbcPort":10000,"numWorkers":1},{"id":"0805-081418-build6","name":"default-cluster-2","status":"Terminated","driverIp":"10.152.212.17","jdbcPort":10000,"numWorkers":1}]
+Fri Aug 5 09:47:33 UTC 2016 {"error":"IllegalArgumentException: requirement failed: missing cluster name"}
+Fri Aug 5 09:52:31 UTC 2016 {"id":"0805-095230-romps8"}
+Fri Aug 5 09:54:37 UTC 2016 {"id":"0805-095436-slag9"}
+Fri Aug 5 09:54:43 UTC 2016 {"error":"IllegalArgumentException: A cluster with name r-n-d already exists"}
+Fri Aug 5 09:56:23 UTC 2016 | {"error":"IllegalArgumentException: A cluster with name r-n-d already exists"}
